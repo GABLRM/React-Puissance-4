@@ -1,5 +1,17 @@
 .linkButton {
-    padding: 5px;
-    color: white;
-    background-color: blueviolet;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    width: 30%;
+    height: 20px;
+    border-radius: 50px;
+    transition: width .75s, background-color .5s, color .5s, height .75s, font-size .75s;
+}
+
+.linkButton:hover {
+    height: 50px;
+    width: 40%;
+    font-size: 2em;
+    transition: width .75s, background-color .5s, height .75s, font-size .75s;
+    color: black;
 }
