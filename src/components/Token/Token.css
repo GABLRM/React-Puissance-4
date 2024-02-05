@@ -1,0 +1,15 @@
+.token {
+    width: 100px;
+    height: 100px;
+    background-color: #2C7DA0;
+    border-radius:50%;
+    margin: 5px;
+}
+
+.token.yellow {
+    background-color: #f4cd58;
+}
+
+.token.red {
+    background-color: #fa433d;
+}
