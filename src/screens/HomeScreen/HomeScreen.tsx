@@ -9,11 +9,11 @@ const HomeScreen = () => {
             <div className="rowContainer">
                 <div className="inputWithIcon">
                     <div className="token red" />
-                    <input type="text" placeholder="Username 1" className="textInput" />
+                    <input type="text" placeholder="Username 1" className="textInput" required />
                 </div>
                 <div className="inputWithIcon">
                     <div className="token yellow" />
-                    <input type="text" placeholder="Username 2" className="textInput" />
+                    <input type="text" placeholder="Username 2" className="textInput" required />
                 </div>
             </div>
             <div className="buttonContainer">
