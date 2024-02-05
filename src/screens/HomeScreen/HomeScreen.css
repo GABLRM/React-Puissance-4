@@ -1,4 +1,43 @@
 .mainContainer {
-    height: 100svh;
-    width: 100svw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.inputWithIcon {
+    display: flex;
+    align-items: center;
+}
+
+.textInput {
+    padding: 30px;
+    margin: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.token {
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.token.yellow {
+    background-color: #f4cd58;
+}
+
+.token.red {
+    background-color: #fa433d;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
 }
