@@ -1,5 +1,4 @@
 import { useRecoilState } from "recoil";
-import GameState from "../../components/GameStat/GameStat";
 import Grid from "../../components/Grid/Grid";
 import { gameState } from "../../atoms/GameState";
 
@@ -21,7 +20,6 @@ const Game = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <GameState />
         <h1>Puissance 4</h1>
         <p>C'est au tour de <span className={`tokenColor-${player.color}`}>{player.playerName} ⬤</span> de jouer !</p>
         <Grid />
