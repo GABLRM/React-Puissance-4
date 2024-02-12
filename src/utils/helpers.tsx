@@ -5,6 +5,7 @@ export const checkColumn = (column: string[]) => {
             return i
         };
     };
+    return -1;
 };
 
 export const CheckWin = (grid: string[][], player: string) => {
