@@ -59,3 +59,14 @@ export const CheckWin = (grid: string[][], player: string) => {
         };
     };
 };
+
+export const checkBoardFull = (grid: string[][]): boolean => {
+    let board = 0;
+    for (let i = 0; i < grid.length; i++) {
+        board = board + checkColumn(grid[i]);
+        if (board === -grid.length) {
+            return true;
+        }
+    }
+    return false;
+};
