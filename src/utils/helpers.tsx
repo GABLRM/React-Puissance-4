@@ -1,4 +1,7 @@
-const checkColumn = (column: string[]) => {
+import { useRecoilState } from "recoil";
+import { gridState } from "../atoms/GridState";
+
+export const checkColumn = (column: string[]) => {
 
     for (let i = 0; i < column.length; i++) {
         if (column[i] === '') {
@@ -7,5 +10,12 @@ const checkColumn = (column: string[]) => {
     };
 };
 
+export const CheckWin = (player: string) => {
 
-export default checkColumn;
+    const [grid, setGrid] = useRecoilState(gridState)
+    return (
+        <div>
+            state : {grid[0]}
+        </div>
+    )
+};

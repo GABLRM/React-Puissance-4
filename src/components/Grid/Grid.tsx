@@ -2,23 +2,21 @@ import './Grid.css';
 import Column from '../Column/Column';
 import {
     RecoilRoot,
-  } from 'recoil';
+} from 'recoil';
 
 const Grid = () => {
-    
+
     return (
-        <RecoilRoot>
-            <div className="grid">
-                <Column idCol={0} />
-                <Column idCol={1} />
-                <Column idCol={2} />
-                <Column idCol={3} />
-                <Column idCol={4} />
-                <Column idCol={5} />
-                <Column idCol={6} />
-            </div>
-        </RecoilRoot>
+        <div className="grid">
+            <Column idCol={0} />
+            <Column idCol={1} />
+            <Column idCol={2} />
+            <Column idCol={3} />
+            <Column idCol={4} />
+            <Column idCol={5} />
+            <Column idCol={6} />
+        </div>
     );
-  };
-  
-  export default Grid;
+};
+
+export default Grid;

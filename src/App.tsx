@@ -2,10 +2,13 @@ import React from 'react'
 import './App.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './config/router'
+import { RecoilRoot } from 'recoil';
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   );
 };
 
