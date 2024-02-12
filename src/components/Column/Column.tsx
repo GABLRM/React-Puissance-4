@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Column.css';
 import Token from '../Token/Token';
 import { useRecoilState } from 'recoil';
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Column: React.FC<Props> = ({ idCol }) => {
-    const [grid, setGrid] = useRecoilState(gridState);
+    const [grid, _] = useRecoilState(gridState);
 
     return (
         <button

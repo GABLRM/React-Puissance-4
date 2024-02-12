@@ -8,7 +8,7 @@ interface Props {
 }
 
 const LinkButton: React.FC<Props> = ({ to, label }) => (
-  <Link to={to} className="linkButton">
+  <Link to={to} className="linkButton" >
     {label}
   </Link>
 );

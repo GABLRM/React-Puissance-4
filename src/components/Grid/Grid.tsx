@@ -1,8 +1,5 @@
 import './Grid.css';
 import Column from '../Column/Column';
-import {
-    RecoilRoot,
-} from 'recoil';
 
 const Grid = () => {
 
