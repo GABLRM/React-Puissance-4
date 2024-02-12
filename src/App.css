@@ -3,6 +3,17 @@ body {
   justify-content: center;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
 .tokenColor-yellow {
   color: #f4cd58;
 }

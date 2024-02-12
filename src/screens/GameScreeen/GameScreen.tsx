@@ -19,8 +19,8 @@ const Game = () => {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Puissance 4 online</h1>
-          <p>C'est au tour du jeton {player.playerName} <span className={`tokenColor-${player.color}`}>⬤</span> de jouer !</p>
+          <h1>Puissance 4</h1>
+          <p>C'est au tour de <span className={`tokenColor-${player.color}`}>{player.playerName} ⬤</span> de jouer !</p>
           <Grid />
         </header>
       </div>
