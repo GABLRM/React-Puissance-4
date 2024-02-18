@@ -2,7 +2,7 @@ import { useRecoilState } from "recoil";
 import Grid from "../../components/Grid/Grid";
 import { gameState } from "../../atoms/GameState";
 
-const Game = () => {
+const GameScreen= () => {
   const [game, _] = useRecoilState(gameState);
 
   let player = {
@@ -28,4 +28,4 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default GameScreen;

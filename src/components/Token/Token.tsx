@@ -5,10 +5,10 @@ interface Props {
 }
 
 const Token: React.FC<Props> = ({ color }) => {
-    return (
-      <div className={`token ${color}`}>
-      </div>
-    );
-  };
-  
-  export default Token;
+  return (
+    <div className={`token ${color}`}>
+    </div>
+  );
+};
+
+export default Token;

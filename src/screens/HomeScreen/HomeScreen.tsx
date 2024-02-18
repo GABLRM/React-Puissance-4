@@ -1,58 +1,55 @@
-import React from "react";
+import { useState } from "react";
 import './HomeScreen.css';
 import LinkButton from "../../components/LinkButton/LinkButton";
 import { useRecoilState } from "recoil";
-import { gameState } from "../../atoms/GameState";
+import { userState } from "../../atoms/UserState";
 
 const HomeScreen = () => {
 
-    const [game, setGame] = useRecoilState(gameState);
+    const [user, setUser] = useRecoilState(userState);
+    const [username, setUsername] = useState<string>("");
 
-    const updateUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
-    
-        const changed = e.target.id;
-    
-        if (changed == "red") {
-            setGame({
-                "yellow": {
-                    ...game.yellow
-                },
-                "red": {
-                    ...game.red,
-                    "playerName": e.target.value
-                },
-                "isPlaying": game.isPlaying
-            })
-        } else if (changed == "yellow") {
-            setGame({
-                "yellow": {
-                    ...game.yellow,
-                    "playerName": e.target.value
-                },
-                "red": {
-                    ...game.red
-                },
-                "isPlaying": game.isPlaying
-            })
-        }
-        
+    enum Token {
+        Y = "yellow",
+        R = "red"
     }
-    
+    const [token, setToken] = useState<Token>(Token.Y);
+
+    const switchToken = () => {
+        if (token === Token.Y) {
+            setToken(Token.R);
+        } else {
+            setToken(Token.Y);
+        }
+    }
+
+
+    const setUserState = () => {
+        setUser({
+            ...user,
+            username,
+            color: token
+        })
+    }
+
+    const createRoom = () => {
+        const randomRoomId = Math.floor(Math.random() * 100000).toString();
+        const roomUrl = '/room/' + randomRoomId;
+        return roomUrl;
+    }
+
     return (
         <div className="mainContainer">
             <h1 className="title">Puissance 4 Online</h1>
             <div className="rowContainer">
                 <div className="inputWithIcon">
-                    <div className="token red" />
-                    <input id="red" type="text" placeholder="Username 1" className="textInput" required onChange={updateUserName}/>
-                </div>
-                <div className="inputWithIcon">
-                    <div className="token yellow" />
-                    <input id="yellow" type="text" placeholder="Username 2" className="textInput" required onChange={updateUserName} />
+                    <button className={'token ' + token} onClick={switchToken}></button>
+                    <input type="text" placeholder="Username" className="textInput" required value={username} onChange={(e) => setUsername(e.target.value)} />
                 </div>
             </div>
             <div className="buttonContainer">
-                <LinkButton to="/game" label="Play !" />
+                <LinkButton to={createRoom()} onClick={setUserState} label="Create Room" />
+                <LinkButton to="/joinRoom" label="Join Room" />
             </div>
         </div>
     );

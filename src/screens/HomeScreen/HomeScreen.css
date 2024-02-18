@@ -29,6 +29,10 @@
     border-radius: 50px;
 }
 
+.token:hover {
+    border: none;
+}
+
 .token.yellow {
     background-color: #f4cd58;
 }
@@ -40,4 +44,5 @@
 .buttonContainer {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }

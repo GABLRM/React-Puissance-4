@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# Puissance 4 - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une reprise du jeu [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) conçu en [React](https://react.dev/).
 
-Currently, two official plugins are available:
+Deux versions du jeu sont proposées :
+- "Online Game" : pour jouer à distance, avec un ordinateur par joueur (version accessible depuis la branche main)
+- "Local Game" : pour jouer sur un seul PC, chaque joueur à tour de rôle (version accessible depuis la [branche local-game](https://github.com/GABLRM/React-Puissance-4/tree/local-game))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sommaire
 
-## Expanding the ESLint configuration
+- [I - Jouer au Puissance 4]()
+- [II - Lancer une instance en local]()
+ - [A - Prérequis]()
+ - [B - Installation]()
+ - [C - Lancement]()
+- [III - Fonctionnement]()
+- [IV - Crédits]()
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## I - Jouer au Puissance 4
 
-- Configure the top-level `parserOptions` property like this:
+Ce projet est disponible en ligne grâce à Vercel.app. Vous pouvez donc jouer en ligne depuis l'addresse : https://ynovbordeaux-puissance4.vercel.app
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## II - Lancer une instance en local
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### A - Prérequis
+
+...
+
+### B - Installation
+
+...
+
+### C - Lancement
+
+...
+
+## III - Fonctionnement
+
+...
+
+## IV - Crédits
+
+Ce projet a été réalisé par Luka GARCIA et Gabriel LAROUMANIE dans le cadre de notre Bachelor 3 Informatique chez Bordeaux YNOV Campus.
