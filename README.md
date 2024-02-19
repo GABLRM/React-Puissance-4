@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Puissance 4 - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une reprise du jeu [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) conçu en [React](https://react.dev/).
 
-Currently, two official plugins are available:
+Deux versions du jeu sont proposées :
+- "Local Game" : pour jouer sur un seul PC, chaque joueur à tour de rôle (version accessible depuis la [branche local-game](https://github.com/GABLRM/React-Puissance-4/tree/local-game) / actuellement sur la branche main)
+- "Online Game" **En cours de développement** : pour jouer à distance, avec un ordinateur par joueur (version accessible depuis la branche [websockets](https://github.com/GABLRM/React-Puissance-4/tree/websockets))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sommaire
 
-## Expanding the ESLint configuration
+- [I - Jouer au Puissance 4](#i---jouer-au-puissance-4)
+- [II - Lancer une instance en local](#ii---lancer-une-instance-en-local)
+	- [A - Prérequis](#a---prérequis)
+	- [B - Installation](#b---installation)
+	- [C - Lancement](#c---lancement)
+- [III - Fonctionnement](#iii---fonctionnement)
+- [IV - Crédits](#iv---crédits)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## I - Jouer au Puissance 4
 
-- Configure the top-level `parserOptions` property like this:
+Ce projet est disponible en ligne grâce à Vercel.app. Vous pouvez donc jouer en ligne depuis l'adresse : [https://react-puissance-4.vercel.app](https://react-puissance-4.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## II - Lancer une instance en local
+
+### A - Prérequis
+
+Pour lancer les projet initial, il est nécessaire d'avoir d'installé sur sa machine :
+- Node.js
+
+La version en Websockets nécessite d'avoir également l'API de lancée. Elle est disponible à cette adresse : [https://github.com/GABLRM/api-react-puissance-4](https://github.com/GABLRM/api-react-puissance-4)
+
+### B - Installation
+
+Pour récupérer le projet, vous devez clone ce répository avec la commande
+
+```bash
+git clone https://github.com/GABLRM/React-Puissance-4.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Ensuite, il est nécessaire d'installer les dépendences du projet avec la commande
+
+```bash
+npm i
+```
+
+### C - Lancement
+
+Pour lancer le projet en environnement de dev, il est possible d'utiliser la commande
+
+```
+npm run dev
+```
+
+## III - Fonctionnement
+
+Pour utiliser le projet, il est possible ensuite de se rendre sur l'adresse [http://localhost:5173/](http://localhost:5173/)
+
+- La version initiale du projet permet de jouer au puissance 4 à tour de rôle sur une seule machine, en ayant chacun entré son pseudo.
+- La version websockets du projet devrait permettre de jouer au puissance 4 avec deux joueurs sur des machines distinctes, à distance. Des "rooms" avec des identifiants uniques sont crées. **En cours de développement**
+
+## IV - Crédits
+
+Ce projet a été réalisé par Luka GARCIA et Gabriel LAROUMANIE dans le cadre de notre Bachelor 3 Informatique chez Bordeaux YNOV Campus.
