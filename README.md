@@ -10,9 +10,9 @@ Deux versions du jeu sont proposées :
 
 - [I - Jouer au Puissance 4](#i---jouer-au-puissance-4)
 - [II - Lancer une instance en local](#ii---lancer-une-instance-en-local)
- - [A - Prérequis](#a---prérequis)
- - [B - Installation](#b---installation)
- - [C - Lancement](#c---lancement)
+	- [A - Prérequis](#a---prérequis)
+	- [B - Installation](#b---installation)
+	- [C - Lancement](#c---lancement)
 - [III - Fonctionnement](#iii---fonctionnement)
 - [IV - Crédits](#iv---crédits)
 
